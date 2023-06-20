@@ -1,0 +1,145 @@
+
+/* Como usar variáveis que vão se repetir várias vezes
+na página */
+:root{
+    --primary-color: #6D49F2;
+    --secondary-color: #FED539;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    background: #533131;
+    font-family: 'Montserrat';
+}
+
+.navbar{
+    background: #fff;
+    padding: 1em;
+
+    nav{
+        display: none;
+       }
+       
+       .container{
+           display: flex;
+           place-content: space-between;
+       }
+
+       .mobile-menu{
+        cursor: pointer;
+       }
+}
+
+#logo{
+    max-width: 40%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: 2em;
+    padding: 0.5em 0em 0.7em;
+  }
+  
+  .hero-cta{
+    max-width: 100%;
+    margin-top: 4em;
+    display: flex;
+    
+  }
+  .vendedor{
+    display: inline-grid;
+    background: var(--primary-color);
+    padding: 1em;
+    width: 120px;
+    height: 100px;
+    justify-content: center;
+    margin-right: 1em;
+    border-radius: 10px;
+    color: #fff;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-property: box-shadow, transform;
+
+  }
+
+  .vendedor:hover, .vendedor:focus, .vendedor:active{
+    box-shadow: 0 0 50px rgba($color: #6D49F2, $alpha: 0.6);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+.cliente{
+    display: inline-grid;
+    background: var(--secondary-color);
+    padding: 1em;
+    width: 120px;
+    height: 100px;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-property: box-shadow, transform;
+  }
+
+  .cliente:hover, .cliente:focus, .cliente:active{
+    box-shadow: 0 0 50px rgba($color: #DC901D, $alpha: 0.6);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+section{
+  padding: 2em 2em 5em 2em;
+}
+
+.hero{
+  text-align: left;
+}
+
+/* Seção 2 */
+
+section.servicos{
+  background-color: #F4E6FF;
+}
+
+.image-left{
+  justify-content: center;
+  padding-top: 1em;
+  text-align: center;
+}
+.services-right{
+  box-sizing: border-box;
+}
+
+h2{
+  font-size: 2em;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+}
+
+.services-right .container-services{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+  gap: 15px;
+}
+
+.services-right .container-services .box-image{
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+  padding: 1.3em 0em 1em 0em;
+  justify-content: center;
+
+}
+
+.services-right .container-services .box-image img{
+
+}
